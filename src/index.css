@@ -15,8 +15,8 @@
     --popover: 100 5% 8%;
     --popover-foreground: 40 20% 92%;
 
-    --primary: 45 80% 55%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 120 45% 40%;
+    --primary-foreground: 0 0% 98%;
 
     --secondary: 120 25% 22%;
     --secondary-foreground: 40 20% 92%;
@@ -32,7 +32,7 @@
 
     --border: 100 5% 18%;
     --input: 100 5% 18%;
-    --ring: 45 80% 55%;
+    --ring: 120 45% 40%;
 
     --radius: 0.5rem;
 
@@ -42,18 +42,18 @@
     --camo-4: 80 20% 22%;
     --camo-5: 140 15% 15%;
 
-    --gold: 45 80% 55%;
-    --gold-light: 45 60% 70%;
+    --gold: 120 35% 30%;
+    --gold-light: 100 40% 55%;
     --beige: 40 30% 85%;
 
     --sidebar-background: 100 5% 8%;
     --sidebar-foreground: 40 20% 92%;
-    --sidebar-primary: 45 80% 55%;
+    --sidebar-primary: 120 45% 40%;
     --sidebar-primary-foreground: 0 0% 5%;
     --sidebar-accent: 120 25% 22%;
     --sidebar-accent-foreground: 40 20% 92%;
     --sidebar-border: 100 5% 18%;
-    --sidebar-ring: 45 80% 55%;
+    --sidebar-ring: 120 45% 40%;
   }
 }
 
@@ -83,9 +83,13 @@
     radial-gradient(ellipse 100% 40% at 10% 50%, hsl(var(--camo-4)) 0%, transparent 60%);
 }
 
-/* Gold text gradient */
+/* Camo text gradient */
 .text-gold-gradient {
-  background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-light)) 50%, hsl(var(--gold)) 100%);
+  background: 
+    radial-gradient(ellipse 120% 80% at 20% 40%, hsl(120 50% 25%) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 120% at 70% 30%, hsl(100 40% 50%) 0%, transparent 55%),
+    radial-gradient(ellipse 100% 60% at 50% 70%, hsl(120 30% 35%) 0%, transparent 50%),
+    linear-gradient(135deg, hsl(120 35% 30%) 0%, hsl(100 40% 55%) 35%, hsl(120 50% 25%) 65%, hsl(100 40% 50%) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
