@@ -5,6 +5,10 @@ import productSneaker from "@/assets/product-sneaker-1.jpg";
 import pantsGringo1 from "@/assets/pants-gringo-1.avif";
 import pantsGringo2 from "@/assets/pants-gringo-2.avif";
 import pantsGringo3 from "@/assets/pants-gringo-3.avif";
+import techFleece1 from "@/assets/tech-fleece-1.jpg";
+import techFleece2 from "@/assets/tech-fleece-2.jpg";
+import techFleece3 from "@/assets/tech-fleece-3.jpg";
+import techFleece4 from "@/assets/tech-fleece-4.jpg";
 
 export interface Product {
   id: string;
@@ -15,6 +19,15 @@ export interface Product {
   description: string;
   sizes: string[];
 }
+
+export const categories = [
+  "Todos",
+  "Casacos",
+  "Calças",
+  "Tênis",
+  "Camisetas",
+  "Conjuntos Gringos",
+];
 
 export const products: Product[] = [
   {
@@ -79,5 +92,41 @@ export const products: Product[] = [
     image: pantsGringo3,
     description: "Edição especial com design exclusivo US drip. Conforto e autenticidade em uma peça só. O gringo que mora no Brasil.",
     sizes: ["30", "32", "34", "36", "38"],
+  },
+  {
+    id: "8",
+    name: "Nike Tech Fleece Preto/Cinza",
+    price: 130.00,
+    category: "Casacos",
+    image: techFleece1,
+    description: "Nike Tech Fleece com design two-tone preto e cinza. Logo borrada para o site não cair. Conforto e estilo premium das ruas.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "9",
+    name: "Nike Tech Fleece Cinza",
+    price: 130.00,
+    category: "Casacos",
+    image: techFleece2,
+    description: "Nike Tech Fleece full cinza mescla. Logo borrada para o site não cair. Tecido tecnológico com caimento perfeito.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "10",
+    name: "Nike Tech Fleece Preto",
+    price: 130.00,
+    category: "Casacos",
+    image: techFleece3,
+    description: "Nike Tech Fleece full black. Logo borrada para o site não cair. O clássico que nunca sai de moda. Atitude total.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "11",
+    name: "Nike Tech Fleece Dark",
+    price: 130.00,
+    category: "Casacos",
+    image: techFleece4,
+    description: "Nike Tech Fleece em tom escuro bicolor. Logo borrada para o site não cair. Visual discreto e poderoso.",
+    sizes: ["P", "M", "G", "GG"],
   },
 ];
