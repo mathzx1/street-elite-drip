@@ -1,30 +1,24 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import categoryJackets from "@/assets/category-jackets.jpg";
-import categoryPants from "@/assets/category-pants.jpg";
-import categorySneakers from "@/assets/category-sneakers.jpg";
-import categoryTshirts from "@/assets/category-tshirts.jpg";
+import { categories } from "@/data/products";
 
-const categories = [
-  { name: "Casacos", image: categoryJackets },
-  { name: "Calças", image: categoryPants },
-  { name: "Tênis", image: categorySneakers },
-  { name: "Camisetas", image: categoryTshirts },
-  { name: "Conjuntos Gringos", image: categoryPants },
-];
+interface CategoriesProps {
+  selectedCategory: string;
+  onSelectCategory: (category: string) => void;
+}
 
-const Categories = () => {
+const Categories = ({ selectedCategory, onSelectCategory }: CategoriesProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="categories" className="py-24 camo-pattern" ref={ref}>
+    <section id="categories" className="py-16 camo-pattern" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <p className="font-heading text-sm tracking-[0.3em] uppercase text-primary mb-3">Explore</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-tight text-foreground">
@@ -32,34 +26,22 @@ const Categories = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-wrap justify-center gap-3">
           {categories.map((cat, index) => (
-            <motion.div
-              key={cat.name}
-              initial={{ opacity: 0, y: 40 }}
+            <motion.button
+              key={cat}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.12 }}
-              className="group relative overflow-hidden rounded-sm cursor-pointer"
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+              onClick={() => onSelectCategory(cat)}
+              className={`px-6 py-3 rounded-sm font-heading text-sm tracking-widest uppercase border-2 transition-all duration-300 ${
+                selectedCategory === cat
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border text-muted-foreground hover:border-primary hover:text-primary"
+              }`}
             >
-              <div className="aspect-[3/4] overflow-hidden">
-                <img
-                  src={cat.image}
-                  alt={cat.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary transition-colors duration-300 rounded-sm" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="font-heading text-2xl font-bold tracking-wide text-foreground group-hover:text-primary transition-colors duration-300">
-                  {cat.name}
-                </h3>
-                <p className="text-sm text-muted-foreground mt-1 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  Ver coleção →
-                </p>
-              </div>
-            </motion.div>
+              {cat}
+            </motion.button>
           ))}
         </div>
       </div>

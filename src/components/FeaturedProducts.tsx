@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ShoppingBag } from "lucide-react";
@@ -6,9 +6,17 @@ import { products } from "@/data/products";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
 
-const FeaturedProducts = () => {
+interface FeaturedProductsProps {
+  selectedCategory: string;
+}
+
+const FeaturedProducts = ({ selectedCategory }: FeaturedProductsProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const filtered = selectedCategory === "Todos"
+    ? products
+    : products.filter((p) => p.category === selectedCategory);
 
   return (
     <section id="products" className="py-24 bg-background" ref={ref}>
@@ -26,10 +34,18 @@ const FeaturedProducts = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
-            <ProductCard key={product.id} product={product} index={index} isInView={isInView} />
-          ))}
+          <AnimatePresence mode="popLayout">
+            {filtered.map((product, index) => (
+              <ProductCard key={product.id} product={product} index={index} isInView={isInView} />
+            ))}
+          </AnimatePresence>
         </div>
+
+        {filtered.length === 0 && (
+          <p className="text-center text-muted-foreground mt-12 font-heading tracking-wide">
+            Nenhum produto nesta categoria ainda.
+          </p>
+        )}
       </div>
     </section>
   );
@@ -60,9 +76,11 @@ const ProductCard = ({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5, delay: index * 0.15 }}
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={isInView ? { opacity: 1, scale: 1 } : {}}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.4, delay: index * 0.08 }}
       className="group"
     >
       <div className="relative overflow-hidden bg-card rounded-sm mb-4">
@@ -86,7 +104,6 @@ const ProductCard = ({
         <h3 className="font-heading text-lg font-semibold tracking-wide">{product.name}</h3>
         <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
 
-        {/* Sizes */}
         <div className="flex gap-2 pt-1">
           {product.sizes.map((size) => (
             <button
