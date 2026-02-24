@@ -10,6 +10,7 @@ const categories = [
   { name: "Calças", image: categoryPants },
   { name: "Tênis", image: categorySneakers },
   { name: "Camisetas", image: categoryTshirts },
+  { name: "Conjuntos Gringos", image: categoryPants },
 ];
 
 const Categories = () => {
