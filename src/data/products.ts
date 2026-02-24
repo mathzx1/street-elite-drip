@@ -95,8 +95,8 @@ export const products: Product[] = [
   },
   {
     id: "8",
-    name: "Nike Tech Fleece Preto/Cinza",
-    price: 130.00,
+    name: "Tech Fleece Preto/Cinza",
+    price: 165.00,
     category: "Casacos",
     image: techFleece1,
     description: "Nike Tech Fleece com design two-tone preto e cinza. Logo borrada para o site não cair. Conforto e estilo premium das ruas.",
@@ -104,8 +104,8 @@ export const products: Product[] = [
   },
   {
     id: "9",
-    name: "Nike Tech Fleece Cinza",
-    price: 130.00,
+    name: "Tech Fleece Cinza",
+    price: 165.00,
     category: "Casacos",
     image: techFleece2,
     description: "Nike Tech Fleece full cinza mescla. Logo borrada para o site não cair. Tecido tecnológico com caimento perfeito.",
@@ -113,8 +113,8 @@ export const products: Product[] = [
   },
   {
     id: "10",
-    name: "Nike Tech Fleece Preto",
-    price: 130.00,
+    name: "Tech Fleece Preto",
+    price: 165.00,
     category: "Casacos",
     image: techFleece3,
     description: "Nike Tech Fleece full black. Logo borrada para o site não cair. O clássico que nunca sai de moda. Atitude total.",
@@ -122,8 +122,8 @@ export const products: Product[] = [
   },
   {
     id: "11",
-    name: "Nike Tech Fleece Dark",
-    price: 130.00,
+    name: "Tech Fleece Dark",
+    price: 165.00,
     category: "Casacos",
     image: techFleece4,
     description: "Nike Tech Fleece em tom escuro bicolor. Logo borrada para o site não cair. Visual discreto e poderoso.",
