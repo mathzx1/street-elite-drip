@@ -25,6 +25,11 @@ import trapstar13 from "@/assets/trapstar-13.jpg";
 import trapstar14 from "@/assets/trapstar-14.jpg";
 import trapstar15 from "@/assets/trapstar-15.jpg";
 import trapstar16 from "@/assets/trapstar-16.jpg";
+import pantsTechFleece1 from "@/assets/pants-tech-fleece-1.jpg";
+import pantsTechFleece2 from "@/assets/pants-tech-fleece-2.jpg";
+import pantsTechFleece3 from "@/assets/pants-tech-fleece-3.jpg";
+import pantsTechFleece4 from "@/assets/pants-tech-fleece-4.jpg";
+
 
 export interface Product {
   id: string;
@@ -287,6 +292,42 @@ export const products: Product[] = [
     category: "Conjuntos",
     image: trapstar16,
     description: "Conjunto Trapstar Shooters preto com estampa vermelha e cinza. Moletom + calça jogger. O clássico das ruas.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "28",
+    name: "Calça Tech Fleece Preto/Cinza",
+    price: 125.00,
+    category: "Calças",
+    image: pantsTechFleece1,
+    description: "Calça jogger Tech Fleece two-tone preto e cinza. Logo borrada para o site não cair. Tecido tecnológico com caimento perfeito.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "29",
+    name: "Calça Tech Fleece Cinza",
+    price: 125.00,
+    category: "Calças",
+    image: pantsTechFleece2,
+    description: "Calça jogger Tech Fleece full cinza mescla. Logo borrada para o site não cair. Conforto premium para o dia a dia.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "30",
+    name: "Calça Tech Fleece Preta",
+    price: 125.00,
+    category: "Calças",
+    image: pantsTechFleece3,
+    description: "Calça jogger Tech Fleece full black. Logo borrada para o site não cair. O clássico que nunca sai de moda.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "31",
+    name: "Calça Tech Fleece Dark",
+    price: 125.00,
+    category: "Calças",
+    image: pantsTechFleece4,
+    description: "Calça jogger Tech Fleece em tom escuro bicolor. Logo borrada para o site não cair. Visual discreto e poderoso.",
     sizes: ["P", "M", "G", "GG"],
   },
 ];
