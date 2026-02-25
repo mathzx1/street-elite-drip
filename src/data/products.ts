@@ -29,6 +29,10 @@ import pantsTechFleece1 from "@/assets/pants-tech-fleece-1.jpg";
 import pantsTechFleece2 from "@/assets/pants-tech-fleece-2.jpg";
 import pantsTechFleece3 from "@/assets/pants-tech-fleece-3.jpg";
 import pantsTechFleece4 from "@/assets/pants-tech-fleece-4.jpg";
+import synaWorld1 from "@/assets/syna-world-1.avif";
+import synaWorld2 from "@/assets/syna-world-2.avif";
+import synaWorld3 from "@/assets/syna-world-3.avif";
+import synaWorld4 from "@/assets/syna-world-4.avif";
 
 
 export interface Product {
@@ -328,6 +332,42 @@ export const products: Product[] = [
     category: "Calças",
     image: pantsTechFleece4,
     description: "Calça jogger Tech Fleece em tom escuro bicolor. Logo borrada para o site não cair. Visual discreto e poderoso.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "32",
+    name: "Conjunto Syna World Preto",
+    price: 140.00,
+    category: "Conjuntos",
+    image: synaWorld1,
+    description: "Conjunto Syna World em preto. Moletom + calça jogger. Estilo streetwear autêntico direto das ruas.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "33",
+    name: "Conjunto Syna World Cinza",
+    price: 140.00,
+    category: "Conjuntos",
+    image: synaWorld2,
+    description: "Conjunto Syna World em cinza. Moletom + calça jogger. Visual clean e confortável para o dia a dia.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "34",
+    name: "Conjunto Syna World Azul",
+    price: 140.00,
+    category: "Conjuntos",
+    image: synaWorld3,
+    description: "Conjunto Syna World em azul. Moletom + calça jogger. Cor vibrante com atitude streetwear.",
+    sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "35",
+    name: "Conjunto Syna World Verde",
+    price: 140.00,
+    category: "Conjuntos",
+    image: synaWorld4,
+    description: "Conjunto Syna World em verde. Moletom + calça jogger. Estilo único para quem domina as ruas.",
     sizes: ["P", "M", "G", "GG"],
   },
 ];
