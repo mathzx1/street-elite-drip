@@ -1,9 +1,31 @@
-import { X, Minus, Plus, Trash2 } from "lucide-react";
+import { X, Minus, Plus, Trash2, Loader2 } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const CartDrawer = () => {
   const { items, isOpen, setIsOpen, removeItem, updateQuantity, totalPrice, clearCart } = useCart();
+  const [loading, setLoading] = useState(false);
+
+  const handleCheckout = async () => {
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("create-checkout", {
+        body: { items },
+      });
+      if (error) throw error;
+      if (data?.url) {
+        window.location.href = data.url;
+      }
+    } catch (err: any) {
+      toast.error("Erro ao processar pagamento. Tente novamente.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -90,8 +112,12 @@ const CartDrawer = () => {
                     R$ {totalPrice.toFixed(2).replace(".", ",")}
                   </span>
                 </div>
-                <button className="w-full py-4 bg-primary text-primary-foreground font-heading text-sm tracking-widest uppercase hover:bg-gold-light transition-colors">
-                  Finalizar Compra
+                <button
+                  onClick={handleCheckout}
+                  disabled={loading}
+                  className="w-full py-4 bg-primary text-primary-foreground font-heading text-sm tracking-widest uppercase hover:bg-primary/90 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                >
+                  {loading ? <><Loader2 size={16} className="animate-spin" /> Processando...</> : "Finalizar Compra"}
                 </button>
                 <button
                   onClick={clearCart}
