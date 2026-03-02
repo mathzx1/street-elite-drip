@@ -41,7 +41,18 @@ const FeaturedProducts = ({ selectedCategory }: FeaturedProductsProps) => {
           </AnimatePresence>
         </div>
 
-        {filtered.length === 0 && (
+        {selectedCategory === "Tênis" && (
+          <div className="text-center mt-12 p-8 border border-border rounded-sm bg-card">
+            <p className="font-heading text-lg tracking-wide text-foreground mb-2">
+              Entre em contato via Instagram
+            </p>
+            <p className="text-muted-foreground">
+              A variedade do catálogo é muito grande! Nos chame no Instagram para encontrar o tênis perfeito para você.
+            </p>
+          </div>
+        )}
+
+        {filtered.length === 0 && selectedCategory !== "Tênis" && (
           <p className="text-center text-muted-foreground mt-12 font-heading tracking-wide">
             Nenhum produto nesta categoria ainda.
           </p>
