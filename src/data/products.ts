@@ -33,6 +33,12 @@ import synaWorld1 from "@/assets/syna-world-1.avif";
 import synaWorld2 from "@/assets/syna-world-2.avif";
 import synaWorld3 from "@/assets/syna-world-3.avif";
 import synaWorld4 from "@/assets/syna-world-4.avif";
+import purpleBrand1 from "@/assets/purple-brand-1.avif";
+import purpleBrand2 from "@/assets/purple-brand-2.avif";
+import purpleBrand3 from "@/assets/purple-brand-3.avif";
+import purpleBrand4 from "@/assets/purple-brand-4.avif";
+import purpleBrand5 from "@/assets/purple-brand-5.avif";
+import purpleBrand6 from "@/assets/purple-brand-6.avif";
 
 
 export interface Product {
@@ -324,5 +330,59 @@ export const products: Product[] = [
     image: synaWorld4,
     description: "Conjunto Syna World em verde. Moletom + calça jogger. Estilo único para quem domina as ruas.",
     sizes: ["P", "M", "G", "GG"],
+  },
+  {
+    id: "36",
+    name: "Calça Purple Brand Preta",
+    price: 320.00,
+    category: "Calças",
+    image: purpleBrand1,
+    description: "Calça Purple Brand em preto. Corte slim com acabamento premium. Estilo autêntico das ruas.",
+    sizes: ["30", "32", "34", "36", "38"],
+  },
+  {
+    id: "37",
+    name: "Calça Purple Brand Azul",
+    price: 320.00,
+    category: "Calças",
+    image: purpleBrand2,
+    description: "Calça Purple Brand em azul. Corte slim com acabamento premium. Visual clean e estiloso.",
+    sizes: ["30", "32", "34", "36", "38"],
+  },
+  {
+    id: "38",
+    name: "Calça Purple Brand Cinza",
+    price: 320.00,
+    category: "Calças",
+    image: purpleBrand3,
+    description: "Calça Purple Brand em cinza. Corte slim com acabamento premium. Versatilidade e atitude.",
+    sizes: ["30", "32", "34", "36", "38"],
+  },
+  {
+    id: "39",
+    name: "Calça Purple Brand Marrom",
+    price: 320.00,
+    category: "Calças",
+    image: purpleBrand4,
+    description: "Calça Purple Brand em marrom. Corte slim com acabamento premium. Tom terroso com estilo.",
+    sizes: ["30", "32", "34", "36", "38"],
+  },
+  {
+    id: "40",
+    name: "Calça Purple Brand Branca",
+    price: 320.00,
+    category: "Calças",
+    image: purpleBrand5,
+    description: "Calça Purple Brand em branco. Corte slim com acabamento premium. Visual ousado e marcante.",
+    sizes: ["30", "32", "34", "36", "38"],
+  },
+  {
+    id: "41",
+    name: "Calça Purple Brand Delavê",
+    price: 320.00,
+    category: "Calças",
+    image: purpleBrand6,
+    description: "Calça Purple Brand delavê. Corte slim com acabamento premium. Lavagem exclusiva streetwear.",
+    sizes: ["30", "32", "34", "36", "38"],
   },
 ];
