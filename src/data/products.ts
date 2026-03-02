@@ -112,7 +112,7 @@ export const products: Product[] = [
   {
     id: "12",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar1,
     description: "Conjunto Trapstar Decoded com bordado tricolor azul, vermelho e branco. Moletom + calça jogger. Estilo London direto das ruas.",
@@ -121,7 +121,7 @@ export const products: Product[] = [
   {
     id: "13",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar2,
     description: "Conjunto Trapstar Decoded cinza mescla com bordado tricolor. Moletom + calça jogger. Conforto e atitude premium.",
@@ -130,7 +130,7 @@ export const products: Product[] = [
   {
     id: "14",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar3,
     description: "Conjunto Trapstar London Shooters preto com estampa laranja e azul. Moletom + calça jogger. Design exclusivo streetwear.",
@@ -139,7 +139,7 @@ export const products: Product[] = [
   {
     id: "15",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar4,
     description: "Conjunto Trapstar Decoded preto com bordado vermelho e cinza. Moletom + calça jogger. Visual dark e poderoso.",
@@ -148,7 +148,7 @@ export const products: Product[] = [
   {
     id: "16",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar5,
     description: "Conjunto Trapstar Decoded cinza com bordado vermelho e verde. Moletom + calça jogger. Estilo discreto e autêntico.",
@@ -157,7 +157,7 @@ export const products: Product[] = [
   {
     id: "17",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar6,
     description: "Conjunto Trapstar Decoded preto com degradê azul. Moletom + calça jogger. Visual ice blue das ruas de Londres.",
@@ -166,7 +166,7 @@ export const products: Product[] = [
   {
     id: "18",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar7,
     description: "Conjunto Trapstar Decoded cinza com degradê azul. Moletom + calça jogger. Tons frios para um visual clean.",
@@ -175,7 +175,7 @@ export const products: Product[] = [
   {
     id: "19",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar8,
     description: "Conjunto Trapstar Irongate preto com bordado amarelo arco. Moletom + calça jogger. Destaque e atitude nas ruas.",
@@ -184,7 +184,7 @@ export const products: Product[] = [
   {
     id: "20",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar9,
     description: "Conjunto Trapstar Decoded cinza com degradê ice blue e cinza. Moletom + calça jogger. Elegância streetwear.",
@@ -193,7 +193,7 @@ export const products: Product[] = [
   {
     id: "21",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar10,
     description: "Conjunto Trapstar Decoded preto com degradê azul marinho. Moletom + calça jogger. Visual noturno e imponente.",
@@ -202,7 +202,7 @@ export const products: Product[] = [
   {
     id: "22",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar11,
     description: "Conjunto Trapstar Shooters cinza com estampa pantera vermelha. Moletom + calça jogger. Força e estilo nas ruas.",
@@ -211,7 +211,7 @@ export const products: Product[] = [
   {
     id: "23",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar12,
     description: "Conjunto Trapstar Shooters preto com estampa neon amarelo. Moletom + calça jogger. Visual stealth das ruas de London.",
@@ -220,7 +220,7 @@ export const products: Product[] = [
   {
     id: "24",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar13,
     description: "Conjunto Trapstar Decoded preto com bordado camo cinza. Moletom + calça jogger. Camuflagem urbana premium.",
@@ -229,7 +229,7 @@ export const products: Product[] = [
   {
     id: "25",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar14,
     description: "Conjunto Trapstar Decoded cinza com bordado camo. Moletom + calça jogger. Clean e discreto com atitude.",
@@ -238,7 +238,7 @@ export const products: Product[] = [
   {
     id: "26",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar15,
     description: "Conjunto Trapstar Shooters preto com estampa azul e cinza. Moletom + calça jogger. London vibes autênticas.",
@@ -247,7 +247,7 @@ export const products: Product[] = [
   {
     id: "27",
     name: "Conjunto da Trapstar",
-    price: 240.00,
+    price: 460.00,
     category: "Conjuntos",
     image: trapstar16,
     description: "Conjunto Trapstar Shooters preto com estampa vermelha e cinza. Moletom + calça jogger. O clássico das ruas.",
@@ -256,7 +256,7 @@ export const products: Product[] = [
   {
     id: "28",
     name: "Calça Tech Fleece Preto/Cinza",
-    price: 350.00,
+    price: 250.00,
     category: "Calças",
     image: pantsTechFleece1,
     description: "Calça jogger Tech Fleece two-tone preto e cinza. Logo borrada para o site não cair. Tecido tecnológico com caimento perfeito.",
@@ -265,7 +265,7 @@ export const products: Product[] = [
   {
     id: "29",
     name: "Calça Tech Fleece Cinza",
-    price: 350.00,
+    price: 250.00,
     category: "Calças",
     image: pantsTechFleece2,
     description: "Calça jogger Tech Fleece full cinza mescla. Logo borrada para o site não cair. Conforto premium para o dia a dia.",
@@ -274,7 +274,7 @@ export const products: Product[] = [
   {
     id: "30",
     name: "Calça Tech Fleece Preta",
-    price: 350.00,
+    price: 250.00,
     category: "Calças",
     image: pantsTechFleece3,
     description: "Calça jogger Tech Fleece full black. Logo borrada para o site não cair. O clássico que nunca sai de moda.",
@@ -283,7 +283,7 @@ export const products: Product[] = [
   {
     id: "31",
     name: "Calça Tech Fleece Dark",
-    price: 350.00,
+    price: 250.00,
     category: "Calças",
     image: pantsTechFleece4,
     description: "Calça jogger Tech Fleece em tom escuro bicolor. Logo borrada para o site não cair. Visual discreto e poderoso.",
@@ -292,7 +292,7 @@ export const products: Product[] = [
   {
     id: "32",
     name: "Conjunto Syna World Preto",
-    price: 140.00,
+    price: 300.00,
     category: "Conjuntos",
     image: synaWorld1,
     description: "Conjunto Syna World em preto. Moletom + calça jogger. Estilo streetwear autêntico direto das ruas.",
@@ -301,7 +301,7 @@ export const products: Product[] = [
   {
     id: "33",
     name: "Conjunto Syna World Cinza",
-    price: 140.00,
+    price: 300.00,
     category: "Conjuntos",
     image: synaWorld2,
     description: "Conjunto Syna World em cinza. Moletom + calça jogger. Visual clean e confortável para o dia a dia.",
@@ -310,7 +310,7 @@ export const products: Product[] = [
   {
     id: "34",
     name: "Conjunto Syna World Azul",
-    price: 140.00,
+    price: 300.00,
     category: "Conjuntos",
     image: synaWorld3,
     description: "Conjunto Syna World em azul. Moletom + calça jogger. Cor vibrante com atitude streetwear.",
@@ -319,7 +319,7 @@ export const products: Product[] = [
   {
     id: "35",
     name: "Conjunto Syna World Verde",
-    price: 140.00,
+    price: 300.00,
     category: "Conjuntos",
     image: synaWorld4,
     description: "Conjunto Syna World em verde. Moletom + calça jogger. Estilo único para quem domina as ruas.",
