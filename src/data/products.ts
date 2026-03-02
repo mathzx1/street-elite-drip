@@ -121,7 +121,7 @@ export const products: Product[] = [
   {
     id: "8",
     name: "Tech Fleece Preto/Cinza",
-    price: 165.00,
+    price: 350.00,
     category: "Casacos",
     image: techFleece1,
     description: "Nike Tech Fleece com design two-tone preto e cinza. Logo borrada para o site não cair. Conforto e estilo premium das ruas.",
@@ -130,7 +130,7 @@ export const products: Product[] = [
   {
     id: "9",
     name: "Tech Fleece Cinza",
-    price: 165.00,
+    price: 350.00,
     category: "Casacos",
     image: techFleece2,
     description: "Nike Tech Fleece full cinza mescla. Logo borrada para o site não cair. Tecido tecnológico com caimento perfeito.",
@@ -139,7 +139,7 @@ export const products: Product[] = [
   {
     id: "10",
     name: "Tech Fleece Preto",
-    price: 165.00,
+    price: 350.00,
     category: "Casacos",
     image: techFleece3,
     description: "Nike Tech Fleece full black. Logo borrada para o site não cair. O clássico que nunca sai de moda. Atitude total.",
@@ -148,7 +148,7 @@ export const products: Product[] = [
   {
     id: "11",
     name: "Tech Fleece Dark",
-    price: 165.00,
+    price: 350.00,
     category: "Casacos",
     image: techFleece4,
     description: "Nike Tech Fleece em tom escuro bicolor. Logo borrada para o site não cair. Visual discreto e poderoso.",
@@ -301,7 +301,7 @@ export const products: Product[] = [
   {
     id: "28",
     name: "Calça Tech Fleece Preto/Cinza",
-    price: 125.00,
+    price: 350.00,
     category: "Calças",
     image: pantsTechFleece1,
     description: "Calça jogger Tech Fleece two-tone preto e cinza. Logo borrada para o site não cair. Tecido tecnológico com caimento perfeito.",
@@ -310,7 +310,7 @@ export const products: Product[] = [
   {
     id: "29",
     name: "Calça Tech Fleece Cinza",
-    price: 125.00,
+    price: 350.00,
     category: "Calças",
     image: pantsTechFleece2,
     description: "Calça jogger Tech Fleece full cinza mescla. Logo borrada para o site não cair. Conforto premium para o dia a dia.",
@@ -319,7 +319,7 @@ export const products: Product[] = [
   {
     id: "30",
     name: "Calça Tech Fleece Preta",
-    price: 125.00,
+    price: 350.00,
     category: "Calças",
     image: pantsTechFleece3,
     description: "Calça jogger Tech Fleece full black. Logo borrada para o site não cair. O clássico que nunca sai de moda.",
@@ -328,7 +328,7 @@ export const products: Product[] = [
   {
     id: "31",
     name: "Calça Tech Fleece Dark",
-    price: 125.00,
+    price: 350.00,
     category: "Calças",
     image: pantsTechFleece4,
     description: "Calça jogger Tech Fleece em tom escuro bicolor. Logo borrada para o site não cair. Visual discreto e poderoso.",
