@@ -57,7 +57,7 @@ export const categories = [
 export const products: Product[] = [
   {
     id: "6",
-    name: "Calça Gringo Urban Fit",
+    name: "Calça Purple Brand",
     price: 320.00,
     category: "Calças",
     image: pantsGringo2,
@@ -66,7 +66,7 @@ export const products: Product[] = [
   },
   {
     id: "7",
-    name: "Calça Gringo Drip Edition",
+    name: "Calça Purple Brand",
     price: 320.00,
     category: "Calças",
     image: pantsGringo3,
